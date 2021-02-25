@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：在 Azure 上使用 Puppet 部署应用'
     module: '模块 14：通过 Azure 提供的第三方基础结构即代码工具'

@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：使用 Azure Pipelines 启用持续集成'
     module: '模块 6：使用 Azure Pipelines 实现持续集成'
