@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：使用 SonarCloud 和 Azure DevOps 管理技术债务'
     module: '模块 20：验证代码库是否合规'
