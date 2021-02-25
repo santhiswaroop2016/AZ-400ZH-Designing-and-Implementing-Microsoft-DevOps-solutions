@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：使用 Azure 实现现有 ASP.NET 应用的现代化'
     module: '模块 15：使用 Docker 管理容器'
