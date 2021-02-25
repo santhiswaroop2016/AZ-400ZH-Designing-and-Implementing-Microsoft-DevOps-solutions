@@ -69,7 +69,7 @@ lab:
     > **备注**：除非要通过 SonarCloud 注册付费计划，否则请确保将 Azure DevOps 项目设置为公共。如果*要*注册付费计划，则可以创建专用项目。
 
 1.  转到 **“SonarExamples”** 窗格，在 Azure DevOps 门户最左侧的垂直菜单栏中，单击 **“Repos”**，在 **“SonarExamples 为空。请添加一些代码!”** 窗格的 **“导入存储库”** 部分，单击 **“导入”**。
-1.  在 **“导入 Git 存储库”** 窗格上，确保 **Git** 在 **“存储库类型”** 下拉列表中显示，在 **“克隆 URL”** 中，键入 **https://github.com/SonarSource/sonar-scanning-examples.git**，然后单击 **“导入”**。 
+1.  在 **“导入 Git 存储库”** 窗格上，确保 **Git** 在 **“存储库类型”** 下拉列表中显示，在 **“克隆 URL”** 中，键入 **https://github.com/SonarSource/sonar-scanning-examples.git** 然后单击 **“导入”**。 
 
     > **备注**：扫描示例存储库包含大量生成系统和语言的示例项目，包括 MSBuild 中的 C# 和 Java 中的 Maven 和 Gradle。
 

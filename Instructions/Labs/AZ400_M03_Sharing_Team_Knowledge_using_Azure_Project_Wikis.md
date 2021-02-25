@@ -1,7 +1,7 @@
 ﻿---
 lab:
     title: '实验室：使用 Azure 项目 Wiki 共享团队知识'
-    module: '模块 03：管理技术债务'
+    module: '模块 3：管理技术债务'
 ---
 
 # 实验室：使用 Azure 项目 Wiki 共享团队知识
