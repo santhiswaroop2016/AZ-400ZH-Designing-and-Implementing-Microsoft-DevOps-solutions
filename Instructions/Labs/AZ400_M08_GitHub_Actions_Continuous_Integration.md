@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：GitHub Actions 持续集成'
     module: '模块 8：实现与 GitHub Actions 的持续集成'
