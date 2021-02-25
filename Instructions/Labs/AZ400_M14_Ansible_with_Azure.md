@@ -1,7 +1,7 @@
 ---
 lab:
     title: '实验室：Ansible 与 Azure'
-    module:'模块 14：通过 Azure 提供的第三方基础结构即代码工具'
+    module: '模块 14：通过 Azure 提供的第三方基础结构即代码工具'
 ---
 
 # 实验室：Ansible 与 Azure
