@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：Azure DevOps 和 Teams 的集成'
     module: '模块 18：实现系统反馈机制'
