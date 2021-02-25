@@ -1,7 +1,7 @@
 ﻿---
 lab:
     title: '实验室：Ansible 与 Azure'
-    az400Module:'模块 14：通过 Azure 提供的第三方基础结构即代码工具'
+    module:'模块 14：通过 Azure 提供的第三方基础结构即代码工具'
 ---
 
 # 实验室：Ansible 与 Azure
@@ -162,7 +162,7 @@ Ansible 要求将托管资源记录在主机清单中。对于某些系统（包
 
     >**备注**： 从 Ansible 2.10 版开始，Azure 模块已与核心模块分开维护。要验证 Ansible 版本，请运行 `ansible --version`。
 
-1.  在 Cloud Shell 窗格的 Bash 会话中，键入 `exit` 并按 **Enter **键以退出会话。 
+1.  在 Cloud Shell 窗格的 Bash 会话中，键入 `exit` 并按 **Enter** 键以退出会话。 
 
     >**备注**： 要使模块的安装生效，必须执行此操作。 
 

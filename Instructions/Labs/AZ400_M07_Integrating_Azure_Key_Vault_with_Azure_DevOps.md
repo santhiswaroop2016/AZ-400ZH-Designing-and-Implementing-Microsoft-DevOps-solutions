@@ -1,7 +1,7 @@
 ﻿---
 lab:
     title: '实验室：将 Azure Key Vault 与 Azure DevOps 集成'
-    az400Module: '模块 7：管理应用程序配置和机密'
+    module: '模块 7：管理应用程序配置和机密'
 ---
 
 # 实验室：将 Azure Key Vault 与 Azure DevOps 集成
@@ -177,7 +177,7 @@ Azure Key Vault 可安全存储和管理敏感数据，例如密钥、密码和�
 1.  在 **“SmartHotel-CouponManagement-CI”** 窗格上，单击右上角的 **“编辑”**。
 1.  在 **“所有管道” > “SmartHotel-CouponManagement-CI”** 窗格上，选择 **“任务”** 选项卡，然后在下拉菜单中选择 **“开发”**。
 
-    > **备注**：“开发”阶段的版本定义具有 **Azure Key Vault** 任务*。此任务从 Azure Key Vault 下载*机密*。你需要指向之前在实验室中创建的订阅和 Azure Key Vault 资源。
+    > **备注**： “开发”阶段的版本定义具有 **Azure Key Vault** 任务。此任务从 Azure Key Vault 下载*机密*。你需要指向之前在实验室中创建的订阅和 Azure Key Vault 资源。
 
     > **备注**：你需要为管道授权才能部署到 Azure。Azure 管道可以使用新的服务主体自动创建服务连接，但建议使用之前创建的服务连接。 
 

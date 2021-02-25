@@ -1,7 +1,7 @@
 ﻿---
 lab:
     title: '实验室：设置和运行功能测试'
-    az400Module: '模块 11：使用 Azure Pipelines 实现持续部署'
+    module: '模块 11：使用 Azure Pipelines 实现持续部署'
 ---
 
 # 实验室：设置和运行功能测试
@@ -126,7 +126,7 @@ lab:
     ```
 1.  在 **“管理员:命令提示符”** 窗口中，系统提示 **“输入服务器 URL”** 时，键入 **“https://dev.azure.com/<your-DevOpsYour-organization-name>”**，其中 **<your-DevOpsYour-organization-name>** 表示 Azure DevOps 组织的名称，然后按 **Enter** 键。
 1.  在 **“管理员: 命令提示符”** 窗口中，系统提示输入 **“身份验证类型(按 enter 表示 PAT)”** 时，按 **Enter** 键。
-1.  在 **“管理员: 命令提示符”** 窗口中，系统提示 **“输入个人访问令牌”** 时，切换到 Azure DevOps 门户，关闭 **“获取代理”** 面板，在 Azure DevOps 页的右上角，单击 **“用户设置”** 图标，在下拉菜单中，单击 **“个人访问令牌”**，然后在 **“个人访问令牌”**窗格上，单击 **“新建令牌”。
+1.  在 **“管理员: 命令提示符”** 窗口中，系统提示 **“输入个人访问令牌”** 时，切换到 Azure DevOps 门户，关闭 **“获取代理”** 面板，在 Azure DevOps 页的右上角，单击 **“用户设置”** 图标，在下拉菜单中，单击 **“个人访问令牌”**，然后在 **“个人访问令牌”** 窗格上，单击 **“新建令牌”。
 1.  在 **“创建新的个人访问令牌”** 窗格上，指定以下设置，然后单击 **“创建”** （所有其他设置保留默认值）：
 
     | 设置 | 值 |
@@ -162,13 +162,13 @@ lab:
 1.  在 **az40011bvm** 远程桌面会话中，在显示 **Azure DevOps** 门户的浏览器窗口中，单击左上角的 **“Azure DevOps”** 符号。
 1.  在显示组织项目的窗格上，单击表示 **“设置和运行功能测试”** 项目的磁贴。
 1.  在 **“设置和运行功能测试”** 窗格的垂直导航窗格中，选择 **“管道”**，在 **“管道”** 部分，单击 **“发布”**，然后在 **“Selenium”** 窗格上单击 **“编辑”**。
-1.  在 **“所有管道”>“Selenium”**窗格上，单击 **“任务”** 选项卡标题，然后单击下拉菜单中的 **“开发”**。
+1.  在 **“所有管道”>“Selenium”** 窗格上，单击 **“任务”** 选项卡标题，然后单击下拉菜单中的 **“开发”**。
 1.  在 **“开发”** 阶段的任务列表中，查看 **“IIS 部署”**、**“SQL 部署”** 和 **“Selenium 测试执行”** 部署阶段。 
 
 - **IIS 部署阶段**： 在此阶段，使用以下任务将应用程序部署到 VM：
 
    - **IIS Web 应用管理**： 此任务在已注册代理的目标计算机上运行。它会在本地创建一个网站和一个在端口 **82** ([http://localhost:82](http://localhost:82))下运行的名为 **“PartsUnlimited”** *的应用程序池*
-   - **IIS Web 应用部署**： 此任务使用 **“Web 部署”**将应用程序部署到 IIS 服务器。
+   - **IIS Web 应用部署**： 此任务使用 **“Web 部署”** 将应用程序部署到 IIS 服务器。
 
 - **数据库部署阶段**： 在此阶段，我们使用 [**SQL Server 数据库部署**](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/SqlDacpacDeploymentOnMachineGroup/README.md)任务将 [**dacpac**](https://docs.microsoft.com/zh-cn/sql/relational-databases/data-tier-applications/data-tier-applications) 文件部署到 DB 服务器。
 

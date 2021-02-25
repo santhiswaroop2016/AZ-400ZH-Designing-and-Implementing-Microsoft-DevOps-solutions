@@ -1,7 +1,7 @@
 ﻿---
 lab:
     title: '实验室：在 Azure 上使用 Chef 部署应用”
-    az400Module:'模块 14：通过 Azure 提供的第三方基础结构即代码工具”
+    module:'模块 14：通过 Azure 提供的第三方基础结构即代码工具”
 ---
 
 # 实验室：在 Azure 上使用 Chef 部署应用
@@ -147,7 +147,7 @@ https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.github
     >**备注**： 要连接和管理 Chef Automate，你需要标识托管其安装的 Azure VM 的 vmId 属性。vmId 是分配给 Azure 中每个 VM 的唯一值。可以通过多种方式获得 vmId，包括 Azure PowerShell 和 Azure CLI。在本实验室中，你将为此使用 PuTTY。
 
 1.  在实验室计算机上的 Web 浏览器窗口中，导航到 [PuTTY 下载页面](https://putty.org/)，下载 PuTTY 安装程序，然后使用默认设置运行安装。
-1.  安装完成后，在 **“开始”** 菜单中，展开 **“PuTTY(64 位)”**文件夹，然后单击 **“PuTTY”** 图标以打开 **“PuTTY 配置”** 窗口。
+1.  安装完成后，在 **“开始”** 菜单中，展开 **“PuTTY(64 位)”** 文件夹，然后单击 **“PuTTY”** 图标以打开 **“PuTTY 配置”** 窗口。
 1.  在 **“PuTTY 配置”** 窗口的 **“主机名(或 IP 地址)”** 文本框中，键入在上一个任务结束时标识的 DNS 名称，然后单击 **“打开”**。
 1.  当系统出现提示时，在 **“PuTTY 安全警报”** 窗口中，单击 **“是”**。
 1.  当系统出现提示时，在 **PuTTY** 控制台窗口中，使用用户名 **azureuser** 和密码 **Pa55w.rd1234** 登录。
@@ -280,7 +280,7 @@ https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.github
 
     >**备注**： 接下来，你需要从 [Microsoft Parts Unlimited MRP GitHub 存储库](https://raw.githubusercontent.com/Microsoft/PartsUnlimitedMRP/master/Labfiles/AZ-400T05-ImplemntgAppInfra/Labfiles/M04/DeployusingChef/final/default.rb)中复制 **default.rb** recipe 的全部内容。
 
-1.  在实验室计算机上，启动另一个 Web 浏览器窗口，导航到以下链接，以 RAW 格式显示 default.rb recipe，并将网页内容复制到剪贴板： **https://raw.githubusercontent.com/Microsoft/PartsUnlimitedMRP/master/Labfiles/AZ-400T05-ImplemntgAppInfra/Labfiles/M04/DeployusingChef/final/default.rb**。
+1.  在实验室计算机上，启动另一个 Web 浏览器窗口，导航到以下链接，以 RAW 格式显示 default.rb recipe，并将网页内容复制到剪贴板： **https://raw.githubusercontent.com/Microsoft/PartsUnlimitedMRP/master/Labfiles/AZ-400T05-ImplemntgAppInfra/Labfiles/M04/DeployusingChef/final/default.rb**
 1.  在 **“管理员: Chef DK”** PowerShell 窗口中，运行以下命令以在记事本中打开文件 **C:\\Labfiles\\chef\\chef-repo\\cookbooks\\mrpapp\\recipes\\default.rb**：
 
     ```powershell

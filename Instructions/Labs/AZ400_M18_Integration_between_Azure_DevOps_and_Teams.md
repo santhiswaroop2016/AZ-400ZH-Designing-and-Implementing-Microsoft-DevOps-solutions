@@ -1,7 +1,7 @@
 ﻿---
 lab:
     title: '实验室：Azure DevOps 和 Teams 的集成'
-    az400Module: '模块 18：实现系统反馈机制'
+    module: '模块 18：实现系统反馈机制'
 ---
 
 # 实验室：Azure DevOps 和 Teams 的集成
@@ -72,7 +72,7 @@ lab:
 1.  单击 **“登录”**，并使用与你的 Azure DevOps 订阅相关联的 Microsoft 帐户登录。
 1.  如果需要，在 **“Azure DevOps 演示生成器”** 页面上，单击 **“接受”** 以接受访问 Azure DevOps 订阅的权限请求。
 1.  在 **“新建项目”** 页面上的 **“新建项目名称”** 文本框中，键入 **“Tailwind Traders”**，在 **“选择组织”** 下拉列表中选择你的 Azure DevOps 组织，然后单击 **“选择模板”**。
-1.  在模板列表中，选择 **“Tailwind Traders”** 模板并单击 **“选择模板”。
+1.  在模板列表中，选择 **“Tailwind Traders”** 模板并单击 **“选择模板”**。
 1.  返回 **“新建项目”** 页面，如果提示安装缺失的扩展，请选中 **“ARM 输出”** 下方的复选框，并单击 **“创建项目”**。
 
     > **备注**：等待此过程完成。该过程需要约 2 分钟。如果该过程失败，请导航到你的 DevOps 组织，删除项目并重试。
@@ -113,7 +113,7 @@ lab:
 1.  在 **“Azure Boards”** 窗格上，单击 **“登录”** 链接。
 1.  当提示授予 **“工作项(完整)”**、**“项目和团队(读取)”** 和 **“Teams 集成”** 权限时，在 **“通过 Azure DevOps 实现的 Azure Boards Microsoft Teams 集成”** 对话框中，单击 **“接受”**。
 1.  返回到 **“Azure Boards”** 窗格上，单击 **“设置”** 链接。这将显示 **“Microsoft Azure DevOps 服务 - 配置文件 1”** 窗口。
-1.  在 **“Microsoft Azure DevOps 服务 - 配置文件 1”** 窗口中的 **“组织”** 下拉列表中，选择你的 Azure DevOps 组织并单击**“继续”**。
+1.  在 **“Microsoft Azure DevOps 服务 - 配置文件 1”** 窗口中的 **“组织”** 下拉列表中，选择你的 Azure DevOps 组织并单击 **“继续”**。
 1.  在 **“Microsoft Azure DevOps 服务 - 配置文件 1”** 窗口中的 **“项目”** 下拉列表中，选择 **“Tailwind Traders”** 并单击 **“继续”**。
  
     >**备注**：这将显示 **Tailwind Traders** Azure DevOps 项目中现有工作项的列表。
@@ -213,7 +213,7 @@ lab:
  
     >**备注**：对于生成管道，频道订阅 **“运行阶段状态更改”** 和 **“运行阶段等待批准”** 通知。
 
-1.  在实验室计算机上，切换到显示 Azure DevOps 门户中 **“Tailwind Traders”** 项目的 Web 浏览器，在 Azure DevOps 门户最左侧的垂直菜单栏中单击 **“管道”**，在 **“管道”** 部分单击 **“发布”**，然后在发布列表中单击 **“Website-CD”* 项，并在选中**“Website-CD”**项的情况下，在 Web 浏览器中将其 URL 复制到剪贴板。
+1.  在实验室计算机上，切换到显示 Azure DevOps 门户中 **“Tailwind Traders”** 项目的 Web 浏览器，在 Azure DevOps 门户最左侧的垂直菜单栏中单击 **“管道”**，在 **“管道”** 部分单击 **“发布”**，然后在发布列表中单击 **“Website-CD”** 项，并在选中 **“Website-CD”** 项的情况下，在 Web 浏览器中将其 URL 复制到剪贴板。
 
     >**备注**：该 URL 的格式将会是 `https://dev.azure.com/<organization_name>/Tailwind%20Traders/_release?_a=releases&view=mine&definitionId=2`，其中 `<organization_name>` 是代表你的 DevOps 组织名称的占位符。
 
@@ -273,7 +273,7 @@ lab:
 
 1.  在 Microsoft Teams 窗口中，选中 **“DevOps 帖子”** 频道，单击 **“文件”** 选项卡并注意工具栏包含 **“上传”**、**“同步”** 和 **“下载”** 项。
 
-    >**备注**：还可以使用 **“拖放”**来上传文件。
+    >**备注**： 还可以使用 **“拖放”** 来上传文件。
 
     >**备注**：此外，你还可以选择在 Teams 中以选项卡的形式共享 Azure DevOps 中的内容。这包括 Azure DevOps Wiki（用于存档项目目标、创举、规范、发行说明和最佳做法）。
 
@@ -287,7 +287,7 @@ lab:
 
     >**备注**：现在，你已连接 Microsoft Teams 和 Azure DevOps， 请考虑可以通过 Microsoft Teams 公开的其他类型的信息，例如： 
 
-    - [将 OneNote 笔记本添加到 Teams](https://support.office.com/zh-cn/article/Add-a-OneNote-notebook-to-Teams-0ec78cc3-ba3b-4279-a88e-aa40af9865c2) 以保存冲刺**(Sprint)计划会议**和 **“回顾会议”** 等的会议笔记。
+    - [将 OneNote 笔记本添加到 Teams](https://support.office.com/zh-cn/article/Add-a-OneNote-notebook-to-Teams-0ec78cc3-ba3b-4279-a88e-aa40af9865c2) 以保存冲刺 **(Sprint)计划会议** 和 **“回顾会议”** 等的会议笔记。
     - [将 Azure DevOps 连接到 Power BI ](https://docs.microsoft.com/zh-cn/azure/devops/report/powerbi/?view=azure-devops) 并[添加 Power BI 选项卡](https://support.office.com/zh-cn/article/add-a-powerbi-tab-to-teams-708ce6fe-0318-40fa-80f5-e9174f841918)，以显示来自 Azure DevOps 的高级报告和与项目相关的其他数据。
 
 ## 回顾

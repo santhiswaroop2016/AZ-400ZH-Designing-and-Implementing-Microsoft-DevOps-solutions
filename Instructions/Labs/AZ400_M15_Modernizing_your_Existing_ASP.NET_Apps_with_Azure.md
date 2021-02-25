@@ -1,7 +1,7 @@
 ﻿---
 lab:
     title: '实验室：使用 Azure 实现现有 ASP.NET 应用的现代化'
-    az400Module: '模块 15：使用 Docker 管理容器'
+    module: '模块 15：使用 Docker 管理容器'
 ---
 
 # 实验室：使用 Azure 实现现有 ASP.NET 应用的现代化
@@ -42,7 +42,7 @@ lab:
 确定你将在本实验室中使用的应用程序：
     
 -   Microsoft Edge
--   可从 [Visual Studio 下载页面](https://visualstudio.microsoft.com/downloads/)获得 Visual Studio 2019 Community Edition。Visual Studio 2019 安装应包括 **“ASP.NET 和 Web 开发”**、**“Azure 开发”** 和 **“NET Core 跨平台开发”**工作负载。它已预先安装在实验室计算机上。
+-   可从 [Visual Studio 下载页面](https://visualstudio.microsoft.com/downloads/)获得 Visual Studio 2019 Community Edition。Visual Studio 2019 安装应包括 **“ASP.NET 和 Web 开发”**、**“Azure 开发”** 和 **“NET Core 跨平台开发”** 工作负载。它已预先安装在实验室计算机上。
 -   可从 [Docker 文档站点](https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows)获得适用于 **Windows 的 Docker**。此应用程序将作为本实验室先决条件安装。 
 
 #### 准备 Azure 订阅

@@ -1,7 +1,7 @@
 ﻿---
 lab:
     title: '实验室：在 Azure Repos 中使用 Git 进行版本控制'
-    az400Module: '模块 4：缩放 Enterprise DevOps 的 Git'
+    module: '模块 4：缩放 Enterprise DevOps 的 Git'
 ---
 
 # 实验室：在 Azure Repos 中使用 Git 进行版本控制

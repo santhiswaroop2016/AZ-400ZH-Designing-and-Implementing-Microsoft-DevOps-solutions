@@ -1,7 +1,7 @@
 ﻿---
 lab:
     title: '实验室：将多容器应用程序部署到 Azure Kubernetes 服务'
-    az400Module: '模块 16：创建和管理 Kubernetes 服务基础结构'
+    module: '模块 16：创建和管理 Kubernetes 服务基础结构'
 ---
 
 # 实验室：将多容器应用程序部署到 Azure Kubernetes 服务
