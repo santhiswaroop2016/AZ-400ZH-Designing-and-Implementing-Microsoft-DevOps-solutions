@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：将 Azure Key Vault 与 Azure DevOps 集成'
     module: '模块 7：管理应用程序配置和机密'
