@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：在 Azure DevOps 管道中实现安全性和合规性'
     module:'模块 19：在 DevOps 项目中实现安全性'
