@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：使用 YAML 将管道配置为代码'
     module: '模块 11：使用 Azure Pipelines 实现持续部署'
