@@ -1,4 +1,4 @@
----
+﻿---
 lab:
     title: '实验室：将 Azure Key Vault 与 Azure DevOps 集成'
     module: '模块 7：管理应用程序配置和机密'
@@ -71,7 +71,7 @@ Azure Key Vault 可安全存储和管理敏感数据，例如密钥、密码和�
 1.  单击 **“登录”**，并使用与你的 Azure DevOps 订阅相关联的 Microsoft 帐户登录。
 1.  如果需要，在 **“Azure DevOps 演示生成器”** 页面上，单击 **“接受”** 以接受访问 Azure DevOps 订阅的权限请求。
 1.  在 **“新建项目”** 页面上的 **“新建项目名称”** 文本框中，键入 **“将 Azure Key Vault 与 Azure DevOps 集成”**，在 **“选择组织”** 下拉列表中选择你的 Azure DevOps 组织，然后单击 **“选择模板”**。
-1.  在 **“选择模板”** 页面上的标题菜单中，单击 **“DevOps”** 实验室，在模板列表中，单击 **“Azure Key Vault”** 模板，然后单击 **“选择模板”**。
+1.  在 **“选择模板”** 页面上的标题菜单中，单击 **“DevOps 实验室”**，在模板列表中，单击 **“Azure Key Vault”** 模板，然后单击 **“选择模板”**。
 1.  返回 **“新建项目”** 页面，选中 **“ARM 输出”** 标签下方的复选框，然后单击 **“创建项目”**
 
     > **备注**：等待此过程完成。该过程需要约 2 分钟。如果该过程失败，请导航到你的 DevOps 组织，删除项目并重试。
@@ -99,7 +99,7 @@ Azure Key Vault 可安全存储和管理敏感数据，例如密钥、密码和�
 1.  在 Azure 门户中，单击页面顶部搜索文本框右侧的 **Cloud Shell** 图标。 
 1.  如果提示选择 **“Bash”** 或 **“PowerShell”**，请选择 **“Bash”**。 
 
-   >**备注**：如果这是你第一次打开 **“Cloud Shell”**，会看到 **“未装载任何存储”** 消息，请选择你在本实验室中使用的订阅，然后选择 **“创建存储”**。 
+   >**备注**：如果这是你第一次打开 **“Cloud Shell”**，会看到 **“未装载任何存储”**消息，请选择你在本实验室中使用的订阅，然后选择 **“创建存储”**。 
 
 1.  在 **Bash** 提示符的 **Cloud Shell** 窗格中，运行以下命令以创建服务主体（将 `<service-principal-name>` 替换为任意由字母和数字组成的唯一字符串）：
 
@@ -174,29 +174,29 @@ Azure Key Vault 可安全存储和管理敏感数据，例如密钥、密码和�
 1.  在 **“管道”** 窗格上，单击表示 **SmartHotel-CouponManagement-CI** 管道的条目，然后在 **“SmartHotel-CouponManagement-CI”** 窗格上，单击 **“运行管道”**。
 1.  在 **“运行管道”** 窗格上，接受默认设置，然后单击 **“运行”** 以触发生成。
 1.  在 Azure DevOps 门户的垂直导航窗格中的 **“管道”** 部分，选择 **“版本”**。 
-1.  在 **“SmartHotel-CouponManagement-CI”** 窗格上，单击右上角的 **“编辑”**。
-1.  在 **“所有管道” > “SmartHotel-CouponManagement-CI”** 窗格上，选择 **“任务”** 选项卡，然后在下拉菜单中选择 **“开发”**。
+1.  在 **“SmartHotel-CouponManagement-CD”** 窗格上，单击右上角的 **“编辑”**。
+1.  在 **“所有管道”>“SmartHotel-CouponManagement-CD”** 窗格上，选择 **“任务”** 选项卡，然后在下拉菜单中选择 **“开发”**。
 
-    > **备注**： “开发”阶段的版本定义具有 **Azure Key Vault** 任务。此任务从 Azure Key Vault 下载*机密*。你需要指向之前在实验室中创建的订阅和 Azure Key Vault 资源。
+    > **备注**：**“开发”** 阶段的版本定义具有 **Azure Key Vault** 任务。此任务从 Azure Key Vault 下载*机密*。你需要指向之前在实验室中创建的订阅和 Azure Key Vault 资源。
 
     > **备注**：你需要为管道授权才能部署到 Azure。Azure 管道可以使用新的服务主体自动创建服务连接，但建议使用之前创建的服务连接。 
 
 1.  选择 **“Azure Key Vault”** 任务，然后在右侧的 **“Azure Key Vault”** 任务属性的 **“Azure 订阅”** 标签旁，单击 **“管理”**。 
 这将打开另一个浏览器标签页，该选项卡显示了 Azure DevOps 门户中的 **“服务连接”** 窗格。
-1.  在“服务连接”窗格上，单击 **“新建服务连接”**。 
-1.  在“新建服务连接”窗格上，选择 **“Azure 资源管理器”** 选项，单击 **“下一步”**，选择 **“服务主体(手动)”**，然后再次单击 **“下一步”**。
+1.  在 **“服务连接”** 窗格上，单击 **“新建服务连接”**。 
+1.  在 **“新建服务连接”** 窗格上，选择 **“Azure 资源管理器”** 选项，单击 **“下一步”**，选择 **“服务主体(手动)”**，然后再次单击 **“下一步”**。
 1.  在 **“新建服务连接”** 窗格上，使用 Azure CLI 创建服务主体，然后使用复制到本练习的第一个任务内的文本文件中的信息来指定以下设置：
 
-- 订阅 ID：通过运行 `az account show --query id --output tsv` 获取的值
-- 订阅名称：通过运行 `az account show --query name --output tsv` 获取的值
-- 服务主体 ID：通过运行 `az ad sp create-for-rbac --name <service-principal-name>` 而生成的输出中的标记为 **appId** 的值
-- 服务主体密钥：通过运行 `az ad sp create-for-rbac --name <service-principal-name>` 而生成的输出中的标记为 **“密码”** 的值
-- 租户 ID：通过运行 `az ad sp create-for-rbac --name <service-principal-name>` 而生成的输出中的标记为 **“租户”** 的值
+    - 订阅 ID：通过运行 `az account show --query id --output tsv` 获取的值
+    - 订阅名称：通过运行 `az account show --query name --output tsv` 获取的值
+    - 服务主体 ID：通过运行 `az ad sp create-for-rbac --name <service-principal-name>` 而生成的输出中的标记为 **appId** 的值
+    - 服务主体密钥：通过运行 `az ad sp create-for-rbac --name <service-principal-name>` 而生成的输出中的标记为 **“密码”** 的值
+    - 租户 ID：通过运行 `az ad sp create-for-rbac --name <service-principal-name>` 而生成的输出中的标记为 **“租户”** 的值
 
 1.  在 **“新建服务连接”** 窗格上，单击 **“验证”** 以确定提供的信息是否有效。 
 1.  收到 **“验证成功”** 响应后，在 **“服务连接名称”** 文本框中，键入 **“kv-service-connection”**，然后单击 **“验证并保存”**。
-1.  切换回显示 **Azure Key Vault** 任务的 Web 浏览器标签页。 
-1.  选中 **“Azure Key Vault”** 任务后，在 **“Azure Key Vault”** 窗格上，单击 **“刷新”** 按钮，在 **“Azure 订阅”** 下拉列表中，选择 **“kv-service-connection”** 条目，在 **“密钥保管库”** 下拉列表中，选择在第一个任务中创建的表示 的条目，然后在 **“机密筛选器”** 文本框中，键入 **“sqldbpassword”**。最后，展开 **“输出变量”** 部分，然后在 **“参考名称”** 文本框中，键入 **“sqldbpassword”**。 
+1.  切换回显示管道定义和 **Azure Key Vault** 任务的 Web 浏览器标签页。
+1.  选中 **“Azure Key Vault”** 任务后，在 **“Azure Key Vault”** 窗格上，单击 **“刷新”** 按钮，在 **“Azure 订阅”** 下拉列表中，选择 **“kv-service-connection”** 条目，在 **“密钥保管库”** 下拉列表中，选择在第一个任务中创建的表示 Azure 密钥保管库的条目，然后在 **“机密筛选器”** 文本框中，键入 **“sqldbpassword”**。最后，展开 **“输出变量”** 部分，然后在 **“参考名称”** 文本框中，键入 **“sqldbpassword”**。 
 
     > **备注**：在运行时，Azure Pipelines 将提取最新的机密值，然后将其设置为任务变量 **$(sqldbpassword)**。通过引用该变量，这些任务可以被后续任务使用。  
 
@@ -208,7 +208,9 @@ Azure Key Vault 可安全存储和管理敏感数据，例如密钥、密码和�
 
     > **备注**：**“覆盖模板参数”** 内容会引用 **sqldbpassword** 变量来设置 mySQL 管理员密码。这将使用在密钥保管库中指定的密码来预配 ARM 模板中定义的 MySQL 数据库。 
 
-    > **备注**：你可以通过指定任务的订阅和位置来完成管道定义。在 **“Azure 应用服务部署”** 管道中再次执行在上一任务中执行的操作。最后，保存并新建版本以开始部署。
+1.  可以通过指定任务的订阅（如果需要使用的订阅，请单击 **“授权”**）和位置来完成管道定义。在 **“Azure 应用服务部署”** 管道中**再次**执行在上一任务中执行的操作。 
+
+1.  最后，**保存**并单击 **“新建发布”** > **“创建”**（保留默认值）以开始部署。
 
 ### 练习 2：删除 Azure 实验室资源
 
