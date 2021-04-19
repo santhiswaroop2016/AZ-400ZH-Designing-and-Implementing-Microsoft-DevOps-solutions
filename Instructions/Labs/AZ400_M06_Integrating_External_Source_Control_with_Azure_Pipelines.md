@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：将外部源代码管理与 Azure Pipelines 集成'
     module: '模块 6：使用 Azure Pipelines 实现持续集成'
