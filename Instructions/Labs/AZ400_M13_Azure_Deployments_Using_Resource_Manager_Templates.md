@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：使用资源管理器模板进行 Azure 部署'
     module: '模块 13：使用 Azure Tools 管理基础结构和配置'
