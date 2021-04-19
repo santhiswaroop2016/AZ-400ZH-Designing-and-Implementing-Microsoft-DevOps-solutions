@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：在云中使用 Terraform 和 Azure Pipelines 自动完成基础结构部署'
     module: '模块 14：通过 Azure 提供的第三方基础结构即代码工具'
