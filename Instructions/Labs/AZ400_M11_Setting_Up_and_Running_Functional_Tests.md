@@ -9,7 +9,7 @@ lab:
 
 ## 实验室概述
 
-[Selenium](http://www.seleniumhq.org/) 是一个用于 Web 应用程序的可移植开源软件测试框架。它几乎可以在所有操作系统上运行。它支持所有现代浏览器和多种语言，包括 .NET（C＃）、Java。
+[Selenium](http://www.seleniumhq.org/) 是一个用于 Web 应用程序的可移植开源软件测试框架。它几乎可以在所有操作系统上运行。它支持所有现代浏览器和多种语言，包括 .NET（C#）、Java。
 
 在本实验室中，你将了解如何在 C# Web 应用程序上执行 Selenium 测试用例，这是 Azure DevOps 发布管道的一部分。 
 

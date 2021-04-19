@@ -238,7 +238,7 @@ Ansible 要求将托管资源记录在主机清单中。对于某些系统（包
     --name $VNETNAME \
     --resource-group $RG2NAME \
     --location $LOCATION \
-    --address-prefix 192.168.0.0/16 \
+    --address-prefixes 192.168.0.0/16 \
     --subnet-name $SUBNETNAME \
     --subnet-prefix 192.168.1.0/24
     ```
@@ -511,7 +511,7 @@ Ansible 要求将托管资源记录在主机清单中。对于某些系统（包
 
 在此任务中，你将使用 Ansible playbook 创建托管 Web 服务器的 Azure VM。 
 
->**备注**：在控制 Azure VM 中启动并运行 Ansible 后，我们现在可以部署第一个 playbook，以便创建和配置托管 Azure VM。Playbook 将使用 localhost 文件，而不是动态清单。对于部署，我们将使用示例 playbook**“~/PartsUnlimitedMRP/Labfiles/AZ-400T05-ImplemntgAppInfra/Labfiles/ansible/new_vm_web.yml”**，我们之前在本实验室中从 Github 存储库克隆了该文件。在部署示例 playbook 之前，你需要将包含在其内容中的公共 SSH 密钥替换为在上一个任务中生成的密钥。 
+>**备注**：在控制 Azure VM 中启动并运行 Ansible 后，我们现在可以部署第一个 playbook，以便创建和配置托管 Azure VM。Playbook 将使用 localhost 文件，而不是动态清单。对于部署，我们将使用示例 playbook **“~/PartsUnlimitedMRP/Labfiles/AZ-400T05-ImplemntgAppInfra/Labfiles/ansible/new_vm_web.yml”**，我们之前在本实验室中从 Github 存储库克隆了该文件。在部署示例 playbook 之前，你需要将包含在其内容中的公共 SSH 密钥替换为在上一个任务中生成的密钥。 
 
 1.  在 Cloud Shell 窗格的 Bash 会话中，在配置为 Ansible 控制计算机的 Azure VM 的 SSH 会话中，运行以下命令，以标识在上一个任务中生成的本地存储的公钥：
 
@@ -587,7 +587,7 @@ Ansible 要求将托管资源记录在主机清单中。对于某些系统（包
 
 在此任务中，你将运行另一个 Ansible playbook，以配置新创建的计算机。你将使用一个 playbook 来安装软件包 httpd 和从 Github 存储库下载 HTML 页面。完成此操作后，你将有一个功能完善的 Web 服务器。
 
->**备注**：我们将使用示例 playbook**“~/PartsUnlimitedMRP/Labfiles/AZ-400T05-ImplemntgAppInfra/Labfiles/ansible/httpd.yml”**。我们将利用变量 **vmname** 来修改 playbook 的主机参数，该参数定义 playbook 的目标主机（动态清单脚本返回的主机除外）。 
+>**备注**：我们将使用示例 playbook **“~/PartsUnlimitedMRP/Labfiles/AZ-400T05-ImplemntgAppInfra/Labfiles/ansible/httpd.yml”**。我们将利用变量 **vmname** 来修改 playbook 的主机参数，该参数定义 playbook 的目标主机（动态清单脚本返回的主机除外）。 
 
 1.  在 Cloud Shell 窗格的 Bash 会话中，在配置为 Ansible 控制计算机的 Azure VM 的 SSH 会话中，运行以下命令，以验证新部署的 Azure VM 当前是否未运行任何 Web 服务（其中的 `<IP_address>` 占位符表示分配给新预配的 Azure VM 的网络适配器的公共 IP 地址）：
 
@@ -725,7 +725,7 @@ Ansible 要求将托管资源记录在主机清单中。对于某些系统（包
 
 >**备注**：如上一个任务中所述，Ansible 可用于修复相应模块支持的现有资源的配置偏差。但是，你也可以使用 Ansible 来部署将引用 Azure 资源管理器模板的 playbook，它提供直接访问 Azure 资源管理器提供的功能和资源的权限。 
 
->**备注**：我们将部署另一个 Azure VM，但是目前我们将使用引用 Azure 资源管理器模板的 ansible playbook。为了简单起见，我们将使用[一种非常简洁的 Azure 快速启动模板来预配单个存储帐户](https://github.com/Azure/azure-quickstart-templates/tree/master/101-storage-account-create)。可通过查看 **“/PartsUnlimitedMRP/Labfiles/AZ-400T05-ImplemntgAppInfra/Labfiles/ansible/new_ARM_deployment.yml”**playbook 来标识相关的 playbook 语法。
+>**备注**：我们将部署另一个 Azure VM，但是目前我们将使用引用 Azure 资源管理器模板的 ansible playbook。为了简单起见，我们将使用[一种非常简洁的 Azure 快速启动模板来预配单个存储帐户](https://github.com/Azure/azure-quickstart-templates/tree/master/101-storage-account-create)。可通过查看 **“/PartsUnlimitedMRP/Labfiles/AZ-400T05-ImplemntgAppInfra/Labfiles/ansible/new_ARM_deployment.yml”** playbook 来标识相关的 playbook 语法。
 
 1.  在 Cloud Shell 窗格的 Bash 会话中，在配置为 Ansible 控制计算机的 Azure VM 的 SSH 会话中，在配置为 Web 服务器的 Azure VM 的 SSH 会话中，运行以下命令，在 Nano 文本编辑器中打开调用 Azure 资源管理器模板的 playbook：
 

@@ -162,7 +162,7 @@ lab:
      D-->>A: Send access token
      A->>D: Call REST API with access token
      D-->>A: Respond to REST API
-     A-->>U: 回复 REST API 响应
+     A-->>U: Relay REST API response
     :::
     ```
 

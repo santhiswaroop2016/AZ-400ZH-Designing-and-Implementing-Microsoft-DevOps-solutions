@@ -68,7 +68,7 @@ lab:
 在此任务中，你将使用 Visual Studio Code 创建资源管理器模板
 
 1.  从实验室计算机中启动 Visual Studio Code，在 Visual Studio Code 中，单击“**文件**”顶层菜单，在下拉菜单中，选择“**首选项**”，在级联菜单中选择“**扩展**”，在“**搜索扩展**”文本框中，键入“**Azure 资源管理器 (ARM) 工具**”，选择相应的搜索结果，然后单击“**安装**”以安装 Azure 资源管理器工具
-1.  在 Visual Studio Code 中，单击“**文件**”顶层菜单，在下拉菜单中选择“**打开文件**”，在“打开文件”对话框中输入 URL **https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json**，然后单击“**打开**”。
+1.  在 Visual Studio Code 中，单击“**文件**”顶层菜单，在下拉菜单中选择“**打开文件**”，在“打开文件”对话框中输入 URL **https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json** 然后单击“**打开**”。
 
     > **备注**： 我们将使用某个名为“部署简单 Windows 模板 VM”的 [Azure 快速启动模板](https://azure.microsoft.com/zh-cn/resources/templates/)，**而不是从头开始创建模板**。模板可从 GitHub - [101-vm-simple-windows](https://github.com/Azure/azure-quickstart-templates/tree/master/101-vm-simple-windows) 下载。
 
@@ -102,7 +102,7 @@ lab:
         "type": "Microsoft.Storage/storageAccounts",
         "name": "[variables('storageAccountName')]",
         "location": "[parameters('location')]",
-        "apiVersion": "2018/7/1",
+        "apiVersion": "2018-07-01",
         "sku": {
            "name": "Standard_LRS"
         },
@@ -120,7 +120,7 @@ lab:
         "type": "Microsoft.Storage/storageAccounts",
         "name": "[parameters('storageAccountName')]",
         "location": "[parameters('location')]",
-        "apiVersion": "2018/7/1",
+        "apiVersion": "2018-07-01",
         "sku": {
            "name": "Standard_LRS"
         },
@@ -315,8 +315,8 @@ lab:
     >**备注**： 输出值应如下所示：
 
     ```
-    资源组名称：az400m13l01-RG
-    SAS 令牌的链接模板 URI：https://az400m13blob1677205310.blob.core.windows.net/linktempblobcntr/storage.json?sv=2018-03-28&sr=b&sig=B4hDLt9rFaWHZXToJlMwMjejAQGT7x0INdDR9bHBQnI%3D&se=2020-11-23T21%3A54%3A53Z&sp=r
+    Resource Group Name: az400m13l01-RG
+    Linked template URI with SAS token: https://az400m13blob1677205310.blob.core.windows.net/linktempblobcntr/storage.json?sv=2018-03-28&sr=b&sig=B4hDLt9rFaWHZXToJlMwMjejAQGT7x0INdDR9bHBQnI%3D&se=2020-11-23T21%3A54%3A53Z&sp=r
     ```
 
     >**备注**： 对于需要更高安全级别的场景，你可以在主模板部署过程中动态生成 SAS 令牌，并为 SAS 令牌指定更短的有效期。
@@ -337,7 +337,7 @@ lab:
       "type": "Microsoft.Storage/storageAccounts",
       "name": "[variables('storageAccountName')]",
       "location": "[parameters('location')]",
-      "apiVersion": "2018/7/1",
+      "apiVersion": "2018-07-01",
       "sku": {
         "name": "Standard_LRS"
       },
@@ -354,7 +354,7 @@ lab:
     {
       "name": "linkedTemplate",
       "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2018/5/1",
+      "apiVersion": "2018-05-01",
       "properties": {
           "mode": "Incremental",
           "templateLink": {
@@ -432,7 +432,7 @@ lab:
 1.  在实验室计算机上，在显示 Azure 门户的 Web 浏览器中，单击“Cloud Shell”图标以打开 **Cloud Shell**。 
     > **备注**：如果本练习前面部分的 PowerShell 会话仍处于活动状态，则可以使用该会话，而无需切换到 Bash（下一步）。以下步骤在 Cloud Shell 的 PowerShell 和 Bash 会话中均可运行。如果要打开新的 Cloud Shell 会话，请按照说明进行操作。 
 1.  在“Cloud Shell”窗格中，单击“**PowerShell**”，在下拉菜单中，单击“**Bash**”，然后在出现提示时，单击“**确认**”。 
-1.  在 Cloud Shell 窗格中，单击“**上传/下载文件**”图标，然后在下拉菜单中单击“**上传**”*。 
+1.  在 Cloud Shell 窗格中，单击“**上传/下载文件**”图标，然后在下拉菜单中单击“**上传**”。 
 1.  在“**打开**”对话框中，导航到 **C:\\templates\\azuredeploy.json** 并选择该文件，然后单击“**打开**”。
 1.  在 Cloud Shell 窗格的 **Bash** 会话中，运行以下命令以使用新上传的模板进行部署：
 

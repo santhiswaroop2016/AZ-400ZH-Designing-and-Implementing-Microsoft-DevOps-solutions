@@ -1,4 +1,4 @@
----
+﻿---
 lab:
     title: '实验室：Azure DevOps 和 Teams 的集成'
     module: '模块 18：实现系统反馈机制'
@@ -129,19 +129,19 @@ lab:
 1.  在 **Tailwind Traders** 团队 **“常规”** 频道中的帖子列表中，查看机器人发布的消息，包括：
 
     ```
-    通过以下方式登录到你的 Azure Boards 帐户：@Azure Boards 登录
-    若要了解你还能做什么，请键入“@Azure Boards 帮助”
+    Sign in to your Azure Boards account with: @Azure Boards signin
+    To see what else you can do, type @Azure Boards help
     ```
 1.  在 **Tailwind Traders** 团队 **“常规”** 频道的帖子列表中，选择名为 **“Azure Boards”** 的帖子，按 **Enter** 键，然后查看机器人发布的其他消息：
 
     ```
-    link [project url] - 链接到项目以创建工作项并接收通知
-    subscriptions - 添加或删除此频道的订阅
-    addAreapath [area path] - 从你的项目向此频道添加区域路径
-    signin - 登录到你的 Azure Boards 帐户
-    signout - 从你的 Azure Boards 帐户注销
-    unlink - 从此频道取消链接项目
-    feedback - 报告问题或建议功能
+    link [project url] - Link to a project to create work items and receive notifications
+    subscriptions - Add or remove subscriptions for this channel
+    addAreapath [area path] - Add an area path from your project to this channel
+    signin - Sign in to your Azure Boards account
+    signout - Sign out from your Azure Boards account
+    unlink - Unlink a project from this channel
+    feedback - Report a problem or suggest a feature
     ```
 
 #### 任务 2：将 Azure Boards 看板添加到 Microsoft Teams
@@ -176,18 +176,18 @@ lab:
 1.  在 **Tailwind Traders** 团队 **“常规”** 频道中的帖子列表中，查看机器人发布的消息，包括：
 
     ```
-    通过以下方式订阅到一个或多个管道或项目中的所有管道：@Azure Pipelines 订阅 [pipeline url/ project url]
-    若要了解你还能做什么，请键入“@Azure Pipelines 帮助”
+    Subscribe to one or more pipelines or all pipelines in a project with: @Azure Pipelines subscribe [pipeline url/ project url]
+    To see what else you can do, type @Azure Pipelines help
     ```
 
 1.  在 **Tailwind Traders** 团队 **“常规”** 频道的帖子列表中，选择名为 **“Azure Pipelines”** 的帖子，按 **Enter** 键，然后查看机器人发布的其他消息：
 
     ```
-    subscribe [pipeline url/ project url] - 订阅到项目中的一个或所有管道以接收通知
-    subscriptions - 添加或删除此频道的订阅
-    feedback - 报告问题或建议功能
-    signin - 登录到你的 Azure Pipelines 帐户
-    signout - 从你的 Azure Pipelines 帐户注销
+    subscribe [pipeline url/ project url] - Subscribe to a pipeline or all pipelines in a project to receive notifications
+    subscriptions - Add or remove subscriptions for this channel
+    feedback - Report a problem or suggest a feature
+    signin - Sign in to your Azure Pipelines account
+    signout - Sign out from your Azure Pipelines account
     ```
    
 #### 任务 2：在 Microsoft Teams 中订阅 Azure Pipelines 通知

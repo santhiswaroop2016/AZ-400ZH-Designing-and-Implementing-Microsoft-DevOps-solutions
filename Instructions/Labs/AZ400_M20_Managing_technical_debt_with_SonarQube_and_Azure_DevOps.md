@@ -80,16 +80,16 @@ lab:
 1.   在实验室计算机上显示 Azure DevOps 门户的 Web 浏览器窗口中，在 **“Azure DevOps”** 页面的右上角，单击 **“用户设置”** 图标，在下拉菜单中，单击 **“个人访问令牌”**，在 **“个人访问令牌”** 窗格中，单击“新建令牌”。
 1.   在 **“新建个人访问令牌”** 窗格上，单击 **“显示所有范围”** 链接，指定以下设置，然后单击 **“创建”** （将其他设置全部保留为默认值）：
 
-| 设置 | 值 |
-| --- | --- |
-| 名称 | **使用 SonarCloud 和 Azure DevOps 管理技术债务的实验室** |
-| 范围 | **自定义** |
-| 范围 | **代码** |
-| 权限 | **读写** |
+     | 设置 | 值 |
+     | --- | --- |
+     | 名称 | **使用 SonarCloud 和 Azure DevOps 管理技术债务的实验室** |
+     | 范围 | **自定义** |
+     | 范围 | **代码** |
+     | 权限 | **读写** |
 
 1.   在 **“成功”** 窗格上，将个人访问令牌的值复制到剪贴板。
 
-> **备注**：确保记下令牌的值。关闭此窗格后，将无法再检索它。 
+     > **备注**：确保记下令牌的值。关闭此窗格后，将无法再检索它。 
 
 1.   在 **“成功”** 窗格中，单击 **“关闭”**。
 
@@ -231,7 +231,7 @@ lab:
 
     > **备注**：需遵循本任务中的其余步骤来修改 YAML 管道。 
 
-1.  在 **VSBuild@1** 任务中，将 `solution: 'SomeConsoleApplication.sln'` 替换为 `solution: '**\SomeConsoleApplication.sln'`，以说明解决方案不在存储库的根目录中。
+1.  在 **VSBuild@1** 任务中，将 `solution: 'SomeConsoleApplication.sln'` 替换为 `solution: '**\SomeConsoleApplication.sln**'`，以说明解决方案不在存储库的根目录中。
 1.  在 **SonarCloudPrepare@1** 任务中，将 `organization: 'myorga'` 条目中的 `myorga` 占位符的值替换为 SonarCloud 组织的名称。
 1.  在 **SonarCloudPrepare@1** 任务中，将 `projectKey: 'dotnet-framework-on-azdo'` 条目中的 `dotnet-framework-on-azdo` 占位符的值替换为 SonarCloud 项目密钥的名称。
 1.  在 **SonarCloudPrepare@1** 任务中，将 `projectName: 'Sample .NET Framework project with Azure DevOps'` 条目中的 `Sample .NET Framework project with Azure DevOps` 占位符的值替换为 SonarCloud 项目 (`SonarExamples`) 的名称。

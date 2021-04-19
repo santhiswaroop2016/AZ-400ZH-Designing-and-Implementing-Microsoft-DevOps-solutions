@@ -149,7 +149,7 @@ lab:
           configuration: $(BuildConfiguration)
       - task: VSTest@1
         name: VSTest_3
-        displayName: 测试程序集
+        displayName: Test Assemblies
         inputs:
           testAssembly: '**\$(BuildConfiguration)\*test*.dll;-:**\obj\**'
           codeCoverageEnabled: true
@@ -233,7 +233,7 @@ lab:
 
     | 设置 | 值 |
     | ------- | ----- |
-    | 输入服务器 URL | Azure DevOps 组织的 URL，格式为 **https://dev.azure.com/`<organization_name>`**，其中 `<organization_name>` 表示 Azure DevOps 组织的名称。 |
+    | 输入服务器 URL | Azure DevOps 组织的 URL，格式为 **https://dev.azure.com/ `<organization_name>`**，其中 `<organization_name>` 表示 Azure DevOps 组织的名称。 |
     | 输入身份验证类型（对于 PAT，按 enter） | **Enter** |
     | 输入个人访问令牌 | 你之前在此任务中记录的访问令牌 |
     | 输入代理池（对于默认内容，按 enter） | **az400m05l05a-pool** |
