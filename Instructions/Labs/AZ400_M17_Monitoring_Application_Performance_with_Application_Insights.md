@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：使用 Application Insights 监视应用程序性能'
     module: '模块 17：为开发团队实现反馈'
