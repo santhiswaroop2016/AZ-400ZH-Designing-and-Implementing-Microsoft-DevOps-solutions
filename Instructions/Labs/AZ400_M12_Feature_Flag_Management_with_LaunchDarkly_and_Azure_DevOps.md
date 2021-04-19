@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：使用 LaunchDarkly 和 Azure DevOps 进行功能标志管理'
     module: '模块 12：实现适当的部署模式'
