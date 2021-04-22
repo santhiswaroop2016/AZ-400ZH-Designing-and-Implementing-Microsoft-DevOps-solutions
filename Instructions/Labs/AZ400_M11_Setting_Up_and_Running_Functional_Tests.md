@@ -110,7 +110,7 @@ lab:
     | 用户名 | **vmadmin** |
     | 密码 | **P2ssw0rd@123** |
 
-1.  在 **az40011bvm** 远程桌面会话中，打开 Chrome Web 浏览器窗口，导航到 **https://dev.azure.com**，并登录 Azure DevOps 组织。 
+1.  在 **az40011bvm** 远程桌面会话中，打开 Chrome Web 浏览器窗口，导航到 **https://dev.azure.com** ，并登录 Azure DevOps 组织。 
 1.  在 **Azure DevOps** 门户的左下角单击“**组织设置**”。
 1.  在页面左侧的垂直菜单中，在“**管道**”部分单击“**代理池**”。
 1.  在“**代理池**”窗格上，单击“**默认**”。 
