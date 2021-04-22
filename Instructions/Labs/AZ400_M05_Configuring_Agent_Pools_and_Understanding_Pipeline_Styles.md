@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：配置代理池并了解管道样式'
     module: '模块 5：配置 Azure Pipelines'

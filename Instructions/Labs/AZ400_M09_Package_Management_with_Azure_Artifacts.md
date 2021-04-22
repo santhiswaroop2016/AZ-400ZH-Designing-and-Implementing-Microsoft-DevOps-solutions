@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：使用 Azure Artifacts 进行包管理'
     module: '模块 9：设计和实现依赖项管理策略'

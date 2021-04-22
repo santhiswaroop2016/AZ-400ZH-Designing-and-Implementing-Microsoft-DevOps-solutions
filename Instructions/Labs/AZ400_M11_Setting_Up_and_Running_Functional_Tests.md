@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：设置和运行功能测试'
     module: '模块 11：使用 Azure Pipelines 实现持续部署'

@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '实验室：使用 Azure Boards 进行敏捷规划和项目组合管理'
     module: '模块 1：规划 DevOps'
