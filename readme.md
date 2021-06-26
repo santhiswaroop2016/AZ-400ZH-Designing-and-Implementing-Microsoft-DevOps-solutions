@@ -1,3 +1,4 @@
+[![Board Status](https://dev.azure.com/santhiswaroopnaik0143/961b6394-cf1b-4871-8c17-6df4272a6076/68c9d215-1cee-40b1-9eb1-9f4cefcfe508/_apis/work/boardbadge/f38ec19a-9958-4b79-b411-d9473b50eff8)](https://dev.azure.com/santhiswaroopnaik0143/961b6394-cf1b-4871-8c17-6df4272a6076/_boards/board/t/68c9d215-1cee-40b1-9eb1-9f4cefcfe508/Microsoft.RequirementCategory)
 ﻿# AZ-400：设计和实现 Microsoft DevOps 解决方案
 
 - **[下载最新的学生手册和 AllFiles 内容](../../releases/latest)**
